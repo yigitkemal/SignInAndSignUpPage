@@ -23,8 +23,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
-                android:text="Log In"
                 android:fontFamily="@font/montserrat_black"
+                android:text="Sign Up"
                 android:textColor="?attr/colorPrimaryVariant"
                 android:textSize="32sp" />
 
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginHorizontal="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/custom_edittext"
         android:drawableLeft="@drawable/ic_mail_outline_2"
         android:drawablePadding="12dp"
@@ -83,17 +83,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
+    <EditText
+        android:id="@+id/editTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/ic_lock_closed_outline_1"
+        android:drawableRight="@drawable/ic_eye_off_4"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Reenter your password..."
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColorHint="?attr/colorPrimaryVariant"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
     <LinearLayout
         android:id="@+id/linearLayoutDivider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="40dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword">
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword2">
 
         <View
             android:layout_width="100dp"
@@ -122,7 +141,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
